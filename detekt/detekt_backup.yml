@@ -1,0 +1,86 @@
+output-reports:
+  active: true
+  exclude:
+    - 'TxtOutputReport'
+    - 'XmlOutputReport'
+    # - 'HtmlOutputReport'
+    - 'MdOutputReport'
+    - 'SarifOutputReport'
+
+comments:
+  active: false
+
+complexity:
+  active: false
+
+coroutines:
+  active: true
+  GlobalCoroutineUsage:
+    active: true
+  InjectDispatcher:
+    active: false
+    dispatcherNames:
+      - 'IO'
+      - 'Default'
+      - 'Unconfined'
+  RedundantSuspendModifier:
+    active: true
+  SleepInsteadOfDelay:
+    active: true
+  SuspendFunSwallowedCancellation:
+    active: false
+  SuspendFunWithCoroutineScopeReceiver:
+    active: false
+  SuspendFunWithFlowReturnType:
+    active: false
+
+empty-blocks:
+  active: false
+
+exceptions:
+  active: false
+
+formatting:
+  active: true
+  MaximumLineLength:
+    active: true
+    maxLineLength: 140 # default 120
+  ParameterListWrapping:
+    active: true
+    maxLineLength: 140 # default 120
+  ArgumentListWrapping:
+    active: true
+    maxLineLength: 140 # default 120
+  ParameterWrapping:
+    active: true
+    maxLineLength: 140 # default 120
+  # Отключены:
+  FinalNewline: # Не несет особой пользы.
+    active: false
+  ImportOrdering: # Не несет особой пользы.
+    active: false
+  Indentation: # Значение отличается от установленного в студии.
+    active: false
+  NoWildcardImports: # Значение отличается от установленного в студии.
+    active: false
+  PackageName: # Есть несколько классов, которым страшно менять пакет.
+    active: false
+  SpacingBetweenDeclarationsWithAnnotations: # Не несет особой пользы.
+    active: false
+  StringTemplate: # Не несет особой пользы.
+    active: false
+  Wrapping: # Без правила Indentation создает плохо читаемые конструкции.
+    active: false
+
+naming:
+  active: false
+
+performance:
+  active: false
+
+potential-bugs:
+  active: false
+
+style:
+  active: false
+ 
